@@ -3,12 +3,11 @@ var port = process.env.PORT || 1337;
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     //res.end('Hello World\n');
-    res.end('test');
-    dogSayHello();
+    res.end(dogGreet());
 }).listen(port);
 
-function dogSayHello() {
+function dogGreet() {
     var MrDog = require("./MrDog");
     var dog = new MrDog("DoggyDoggy");
-    dog.greet();
+    return dog.greet();
 }

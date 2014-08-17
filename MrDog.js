@@ -3,7 +3,7 @@ function MrDog(nickname) {
     this.nickname = nickname;
 
     this.greet = function () {
-        document.write("Hello, I am " + this.nickname + "<br />")
+        return "Hello, I am " + this.nickname;
     }
 };
 
