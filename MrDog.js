@@ -7,4 +7,4 @@ function MrDog(nickname) {
     }
 };
 
-module.exports = Hello;
+module.exports = MrDog;
