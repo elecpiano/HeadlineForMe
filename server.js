@@ -14,5 +14,8 @@ function dogGreet() {
 
 function getHtml() {
     var fs = require("fs");
-    fs.readfileSync("./1.html", "utf-8");
+    fs.readfile("./1.html", "utf-8",
+        function (err, data) {
+            return data;
+        });
 }
