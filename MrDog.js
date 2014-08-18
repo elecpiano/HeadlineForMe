@@ -8,10 +8,10 @@ function MrDog(nickname) {
 
     this.getHTML = function () {
         var fs = require('fs');
-        fs.readfileSync('1.html', 'utf-8',
-            function (err, data) {
-                return;
-            });
+        //fs.readfileSync('1.html', 'utf-8',
+        //    function (err, data) {
+        //        return;
+        //    });
     }
 };
 
