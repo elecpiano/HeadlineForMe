@@ -7,7 +7,8 @@ function MrDog(nickname) {
     }
 
     this.getHTML = function () {
-        return "www.baidu.com";
+        var fs = require('fs');
+        return fs.readfileSync('1.html', 'utf-8');
     }
 };
 
