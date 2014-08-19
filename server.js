@@ -19,7 +19,7 @@ function getHtml() {
 }
 
 function uploadData() {
-    var AV = require("av.js");
+    var AV = require("./av.js");
     AV.initialize("3bxcmnvlwxjskd0x71e969hqyect81wiiblw3tcwfhn1otka", "mecdoesr8l8op6anajajykoakd8e2lcw62sh1bs6vcj2ts5x");
     var TestObject = AV.Object.extend("TestObject");
     var testObject = new TestObject();
