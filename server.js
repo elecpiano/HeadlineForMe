@@ -10,8 +10,14 @@ http.createServer(function (req, res) {
     //res.end('Hello World\n');
     //res.end(getHtml());
 
-    var args = URL.parse(req.url);
-    res.end(arg.query.param1);
+    var args = URL.parse(req.url,true);
+    if(!args.query.param1){
+		res.end(getHtml());
+	}
+	else{
+		res.end(args.query.param1);	
+	}
+    
 }).listen(port);
 
 function dogGreet() {
